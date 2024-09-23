@@ -1,0 +1,385 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{calc}
+\usepackage{eso-pic}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{hyperref}
+\usepackage[a4paper,left=25 mm,right=25 mm, bottom=25 mm,
+    margin=1in,top=22 mm]{geometry} % Adjusting the margins
+\usepackage{tikz}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usetikzlibrary{calc}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{tikzpicture}
+    [remember picture, overlay]
+    \draw[line width = 2pt, black] 
+        ($(current page.north west) + (1cm,-1cm)$) 
+        rectangle 
+        ($(current page.south east) + (-1cm,1cm)$);
+\end{tikzpicture}
+    \centering
+    \vspace*{0 cm}
+    \LARGE
+    \textbf{Maulana Abul Kalam Azad University of Technology, WB}
+    \vspace{0.5cm}
+    
+    \includegraphics[width=0.2\textwidth]{MAKAUAT_LOGO.png} % Assuming you have the logo image
+    \vspace{0.5cm}
+    
+    \Large
+    \textbf{\textcolor{blue!60}{Software Tools and Technology\\
+        -: Lab Notebook :-}}
+    \vspace{0.5cm}
+    
+    \large
+    \textbf{\textcolor{red}{Group 36}}
+    \vspace{1 cm}
+    
+    \textbf{Repository Link:} \href{https://github.com/Saheen001/Group-36.git}{https://github.com/Saheen001/Group-36.git}
+    \vspace{1cm}
+    
+    \textbf{\underline{\textcolor{blue!60}{Group Members}}}
+    \vspace{0.5cm}
+
+    \normalsize
+    \begin{enumerate}
+        \item \textbf{Saheen Khan}\\
+              \textbf{Roll No: 30001223056}\\
+              \textbf{Department: Bachelor's of Computer application}
+        \item \textbf{Susmita Ghosh}\\
+              \textbf{Roll No: 30059223040}\\
+              \textbf{Department: BSc in Forensic Science}
+        \item \textbf{Subha Ghosh}\\
+              \textbf{Roll No: 30001223030}\\
+              \textbf{Department: Bachelor's of computer application}
+              \item \textbf{Somen Sardar}\\
+              \textbf{Roll No: 30085323021 }\\
+              \textbf{Department:BSc IT (cyber security)}
+    \end{enumerate}
+    \vspace{0.8 cm}
+    
+    \textbf{Instructor:} \href{mailto:ayan.ghosh@university.edu}{\textcolor{blue}{Ayan Ghosh}}\\
+    \vspace{0.2cm}
+    
+    \textbf{\textit{Date: September 21, 2024}}
+
+\end{titlepage}
+\newpage
+\begin{tikzpicture}
+    [remember picture, overlay]
+    \draw[line width = 2pt, black]
+        ($(current page.north west) + (1cm,-1cm)$)
+        rectangle 
+        ($(current page.south east) + (-1cm,1cm)$);
+\end{tikzpicture}
+\vspace{-2cm}
+
+\centering
+\section*{\underline{\Huge\textbf{\textcolor{blue!60}{Index}}}}
+\vspace{0.5cm}
+
+\renewcommand{\arraystretch}{2}
+\setlength{\tabcolsep}{0pt} 
+
+\begin{tabular}{|>{\centering\arraybackslash}p{80pt}|>{\centering\arraybackslash}p{350pt}|}
+\hline
+\textbf{Serial No.} & \textbf{Questions} \\
+\hline
+1 & Introduction to GitHub and GitHub Desktop version installation \\\hline
+
+2 & Building a C program for a calculator in the local repository,committing,and publishing it as a public repository \\\hline
+3 & Converting a submit button to Chin Tapak Dum Dum \\\hline
+4 & Build a cv in latex\\\hline
+
+
+\end{tabular}
+
+\newpage
+\begin{tikzpicture}
+    [remember picture, overlay]
+    \draw[line width = 2pt, black] 
+        ($(current page.north west) + (1cm,-1cm)$) 
+        rectangle 
+        ($(current page.south east) + (-1cm,1cm)$);
+\end{tikzpicture}
+\vspace{-2cm}
+% Lab notebook entries
+\section*{\Huge{\textcolor{blue!60}{Lab Notebook Entries}}}
+
+\subsection*{Entry by Saheen Khan}
+\textit{Date: [\today]}\\
+\vspace{1 cm}
+\begin{figure}[h!]
+   \centering
+    \includegraphics[width=0.5\linewidth]{github.jpg}
+\end{figure}
+\vspace{0.5 cm}
+
+\section*{\Huge{\underline{{-:GitHub:-}}}}
+\paragraph{\noindent}{GitHub is a web-based platform that allows developers to host, share, and collaborate on software projects. It provides a version control system powered by Git, enabling teams to track changes, manage code repositories, and work together seamlessly across different locations. GitHub supports collaborative development through features like pull requests, issues, and project boards, making it essential for open-source projects and professional software development. Additionally, it integrates with various development tools, enhancing productivity and streamlining the software development lifecycle.}
+
+\vspace{1 cm}
+\subsection*{\underline{-:Installation:-}}
+\paragraph{\setlength{\parindent}{0pt}}{Installing GitHub Desktop is a straightforward process that enhances your workflow by providing a user-friendly interface for managing repositories. To begin, download the installer from the [official GitHub Desktop website](https://desktop.github.com/) for your operating system—Windows or macOS. After downloading, run the installer and follow the on-screen instructions to complete the setup. Once installed, launch the application and sign in with your GitHub credentials, or create a new account if needed. GitHub Desktop simplifies the process of cloning repositories, making commits, and managing branches, making it an invaluable tool for developers of all skill levels. For Linux users, alternative methods like using Wine or other Git clients are available.}
+
+
+\newpage
+\begin{tikzpicture}
+    [remember picture, overlay]
+    \draw[line width = 2pt, black] 
+        ($(current page.north west) + (1cm,-1cm)$) 
+        rectangle 
+        ($(current page.south east) + (-1cm,1cm)$);
+\end{tikzpicture}
+\vspace{-2cm}
+\subsection*{Entry by Somen Sardar}
+\textit{Date: [\today]}\\
+\subsection{Building a C program for a calculator in the local
+repository,committing,and publishing it as a public repository}
+\section{Introduction}
+This document outlines the process of creating a basic calculator in C, committing it to a local Git repository, and pushing it to a public repository on GitHub.
+\section{Step 1: Writing the C Program}
+Below is the source code for a simple calculator written in C:
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{c calculator.png} % Adjusted width
+     \hspace{4 cm}
+    \caption{Screenshot of the source code.}
+\end{figure}
+\section{Step 2: Create a New Repository on GitHub}
+
+1. Go to your GitHub profile: \href{https://github.com/SOMENSARDAR2002}{GitHub - https://github.com/SOMENSARDAR2002}.
+2. Click on \texttt{New} to create a new repository.
+3. Name the repository \texttt{C-Calculator} and ensure it is set to \texttt{Public}.
+4. Do not initialize the repository with a \texttt{README}, \texttt{.gitignore}, or license, as these are not needed for the local repository you have created.
+
+\section{Step 3: Push Local Repository to GitHub}
+
+Copy the remote URL of the new GitHub repository. It should look like this:
+\begin{lstlisting}[caption={Example remote URL}]
+https://github.com/ABIR462/C-Calculator.git
+\end{lstlisting}
+
+Add the remote repository to your local Git:
+\begin{lstlisting}[language=bash, caption={Adding a remote repository}]
+git remote add origin https://github.com/ABIR462/C-Calculator.git
+\end{lstlisting}
+
+Push your local commits to the GitHub repository:
+\begin{lstlisting}[language=bash, caption={Pushing to GitHub}]
+git push -u origin master
+\end{lstlisting}
+
+\section{Step 4: Verify on GitHub}
+
+Visit your GitHub profile to ensure that the code is now available in your public repository: \hrefhttps:{//github.com/SOMENSARDAR2002}{https://github.com/SOMENSARDAR2002}.
+
+
+
+    
+\newpage
+\begin{tikzpicture}
+    [remember picture, overlay]
+    \draw[line width = 2pt, black] 
+        ($(current page.north west) + (1cm,-1cm)$) 
+        rectangle 
+        ($(current page.south east) + (-1cm,1cm)$);
+\end{tikzpicture}
+\vspace{-2cm}
+\subsection*{Entry by Subha Ghosh}
+\textit{Date: [\today]}\\
+\date{\today}
+\floatBarrier 
+\begin{center}
+\section*{\uline{-:Converting a submit button to "chin tapak dum dum":-}}
+\end{center}
+\paragraph{}
+\vspace{0.5cm}
+Steps to Fix the Button and Create a Pull Request\\
+
+1. Clone the Repository:
+   - You’ve already cloned the repository using GitHub Desktop, so you should have the project on your local machine.\\
+\vspace{1cm}
+
+2. Open the Project:
+   - Open the project in your preferred IDE as per the instructions in the readme.md.\\
+\vspace{1cm}
+
+3. Locate the Button Code:
+   - Search for the code where the submit button is defined. This is typically found in the frontend code of the application. Depending on the technology stack used (e.g., HTML/CSS, React, Angular, etc.), it could be in a file like index.html, App.js, ButtonComponent.js, or a similar file.\\
+\vspace{1cm}
+
+4. Rename the Button:
+   - You renamed the button to "Chin Tapak Dum Dum". If the button’s size became disproportionate, it’s likely due to styling issues.\\
+\vspace{1cm}
+
+5. Test the Application:
+   - Run the application again to ensure that the button appears correctly and that there are no additional issues.\\
+\vspace{1cm}
+
+6. Commit Your Changes:
+   - Once the button looks good, commit your changes. Use descriptive commit messages, for example: Fixed button styling after renaming.
+
+   bash
+   git add .
+   git commit -m "Fixed button styling after renaming to 'Chin Tapak Dum Dum'"
+   \\
+\vspace{1cm}
+   
+7. Push Your Changes:
+   - Push your changes to your forked repository on GitHub.
+
+   bash
+   git push origin main
+   
+
+   (Replace main with the correct branch name if it's different.)\\
+\vspace{1cm}
+   
+8. Create a Pull Request:
+   - Go to the original repository on GitHub (the one you cloned from).
+   - You should see an option to create a pull request from your forked repository. Follow the instructions to create a pull request with a title and description of what you have done.
+
+   Make sure to mention in the pull request that you have fixed the button styling after renaming it.
+
+
+
+
+\newpage
+\begin{tikzpicture}
+    [remember picture, overlay]
+    \draw[line width = 2pt, black] 
+        ($(current page.north west) + (1cm,-1cm)$) 
+        rectangle 
+        ($(current page.south east) + (-1cm,1cm)$);
+\end{tikzpicture}
+\vspace{-2cm}
+\subsection*{Entry by Susmita Ghosh}
+\textit{Date: [\today]}\\
+% Formatting for sections
+\titleformat{\section}{\large\bfseries}{}{0em}{}
+\titleformat{\subsection}{\bfseries}{}{0em}{}
+
+% Formatting for itemize
+\setlist[itemize]{topsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=*}
+
+\begin{document}
+
+% Name and Contact Information
+\begin{center}
+    {\Huge \textbf{SUSMITA GHOSH}}\\[0.2cm]
+    \href{mailto:your.email@example.com}{susmitaghosh571165@gmail.com} \\
+    Nabapally,Barasat, Kolkata, West Bengal, 700126 \\
+    9051967660 
+    \href{https://github.com/yourusername}{GitHub:https://github.com/SusmitaFS}
+\end{center}
+
+\section*{Objective}
+I am a dedicated forensic science student with a passion for solving complex problems and uncovering the truth through scientific analysis. I aim to apply my knowledge of forensic techniques and methodologies in a challenging environment where I can contribute to criminal investigations and ensure justice is served. I am seeking opportunities that will allow me to further develop my expertise in forensic analysis, evidence handling, and crime scene investigation.
+
+\section*{Education}
+\begin{tabular}{p{0.75\textwidth} p{0.25\textwidth}}
+\textbf{BSC FORENSIC SCIENCE AND TECHNOLOGY, Major in Forensic Science} & September 2027 \\
+\textit{Maulana Abul Kalam Azad University of Technology, Nadia District, West Bengal} & GPA: 3.99/4.00 \\
+\end{tabular}
+
+\section*{Experience}
+\textbf{Lab Technician} \hfill \textit{Forensibus, Kolkata, West Bengal} \\
+\textit{April,2025 -- November, 2026 }
+\begin{itemize}
+    \item Roles and Responsibilities: Assisted forensic scientists in the analysis of physical evidence collected from crime scenes, including biological, chemical, and digital evidence.
+    \item Achievement: Implemented a new quality control process that reduced errors in forensic analysis by 30 percent, significantly improving the reliability of test results. This process enhancement was recognized by management and led to a more streamlined workflow, ensuring higher standards of accuracy and efficiency in evidence examination.
+\end{itemize}
+
+\textbf{Lab Technician} \hfill \textit{CFSL, Kolkata, West Bengal} \\
+\textit{December, 2026 -- November,2028}
+\begin{itemize}
+    \item Role and Responsibilities: Conducted preliminary tests and prepared samples for advanced forensic analysis, ensuring adherence to strict chain-of-custody protocols.
+    \item Achievement: Played a critical role in a high-profile criminal investigation by successfully analyzing and identifying trace evidence that directly contributed to solving the case. My meticulous handling and preparation of forensic samples led to the accurate matching of evidence, which was pivotal in securing a conviction.
+\end{itemize}
+
+\section*{Projects}
+\textbf{Evaluation of Novel Methods for Trace Evidence Collection and Analysis in Forensic Investigations}\hfill \textit{January 2026 -- November 2026}
+\begin{itemize}
+    \item Description: This project aimed to assess and enhance techniques for the collection and analysis of trace evidence, which is crucial for solving forensic cases. The focus was on developing and validating new methods to improve the efficiency and accuracy of trace evidence handling in forensic investigations.\\
+Role: As a Forensic Technician, I was responsible for conducting hands-on evaluations of the novel collection methods and analytical procedures. My role included preparing samples, operating advanced analytical instruments, and analyzing data to determine the effectiveness of the new techniques.\\
+Technologies Used:\\
+Advanced Vacuum Devices: Utilized for improved trace evidence collection, allowing for more efficient recovery of minute particles.
+High-Resolution Microscopy: Employed to analyze collected evidence with greater precision, enabling detailed examination of trace evidence such as fibers and particles.
+Chemical Assays: Implemented refined chemical assays to enhance the detection and identification of substances in trace evidence.
+Data Analysis Software: Used to process and interpret analytical results, providing insights into the effectiveness of the new methods.
+This description highlights your role in the project, the technologies you worked with, and the overall goal of enhancing trace evidence collection and analysis techniques.
+    \item Outcomes:Developed and validated new analytical procedures, including refined microscopy techniques and more sensitive chemical assays, leading to increased accuracy and reliability in trace evidence identification.
+\end{itemize}
+
+\textbf{Development of a Rapid DNA Extraction Protocol for High-Throughput Forensic Analysis} \hfill \textit{December,2026 -- June,2027}
+\begin{itemize}
+    \item Description: This project focused on creating an efficient DNA extraction protocol to support high-throughput forensic analysis. The goal was to reduce the time required for DNA extraction while maintaining the integrity and quality of the samples, enabling faster and more reliable processing of large volumes of forensic evidence.\\
+Role: As a Forensic Technician, I played a pivotal role in designing and optimizing the extraction protocol. My responsibilities included conducting experiments to test various extraction methods, evaluating their performance, and ensuring that the protocol met forensic standards for accuracy and reliability. I also collaborated with team members to refine the process based on experimental results.\\
+Technologies Used:\\
+Automated DNA Extraction Systems: Utilized advanced automated platforms to streamline and speed up the extraction process, handling multiple samples simultaneously.
+Newly Developed Reagents: Employed innovative reagents designed to enhance the efficiency of DNA extraction from diverse sample types.
+Quantitative PCR (qPCR): Implemented qPCR to assess the quality and quantity of extracted DNA, ensuring the suitability of the protocol for high-throughput applications.
+Data Analysis Software: Used to analyze results and optimize the extraction protocol, improving overall performance and throughput.
+    \item Outcomes: Validation and Adoption: The new protocol was validated through rigorous testing and adopted by several forensic laboratories, leading to standardized procedures across multiple institutions.
+\end{itemize}
+
+\section*{Skills}
+\begin{itemize}
+    \item \textbf{Languages:} English, Hindi, Bengali, Broken German (from Duolingo)
+    \item \textbf{Programming Languages:} DBMS, Little bit of C++
+    \item \textbf{Tools/Technologies:} Git, GitHub, Git bash, LaTeX
+    \item \textbf{Other Skills:} Has good Leadership Ability, Good Public Speaker
+\end{itemize}
+
+\section*{Extracurricular Activities}
+\textbf{SUO at National Cadet Corps} \hfill \textit{NCC India, Kalyani,West Bengal} \\
+\textit{April,2018 -- April,2024}
+\begin{itemize}
+    \item Involvement: As a dedicated cadet (SUO) in the National Cadet Corps (NCC), I participated actively in various training programs and activities designed to develop leadership, discipline, and teamwork skills. My role included engaging in physical training, drills, and community service projects.
+
+Achievements and Contributions:
+
+Leadership Development: I completed leadership training and was appointed as a squad leader, where I was responsible for guiding and mentoring fellow cadets, organizing drills, and leading team exercises.
+
+Community Service: Contributed to several community service initiatives, including organizing and participating in cleanliness drives, blood donation camps, and educational outreach programs, demonstrating commitment to social responsibility.
+
+Event Coordination: Played a key role in the planning and execution of NCC events and ceremonies, including annual camps and inter-unit competitions, ensuring smooth operations and effective participation.
+
+Skill Enhancement: Acquired and applied skills in first aid, survival techniques, and navigation, which were recognized through certifications and accolades during various training sessions.
+
+Awards and Recognition: Received commendations for outstanding performance in drills and exercises, and was awarded the Best Cadet of the Year for exceptional dedication and leadership.
+
+Overall Contribution: My tenure with the NCC helped hone my leadership, organizational, and teamwork skills, which have been instrumental in my personal and professional development.
+
+
+\end{itemize}
+
+\textbf{Air Pistol Shooter} \hfill \textit{Jaydeep Karmakar Shooting Academy, Kolkata, West Bengal} \\
+\textit{September, 2024 -- Still Continuing}
+\begin{itemize}
+    \item Involvement: As an avid air pistol shooter, I have actively participated in various shooting events and competitions, honing my skills in precision and control. My involvement includes regular practice sessions, participation in local and regional shooting events, and engagement in training programs to enhance my shooting techniques.
+
+Achievements and Contributions:
+
+Competitive Success: Achieved top positions in several local and regional air pistol shooting competitions, demonstrating consistent accuracy and skill. Notable achievements include winning first place in the [Name of Competition] and securing a silver medal in the [Name of Tournament].
+
+Skill Development: Developed advanced shooting techniques and strategies through dedicated training, including precision aiming, breath control, and mental focus. My training has been recognized by coaches and peers for its effectiveness in improving overall shooting performance.
+
+Team Participation: Contributed to team events as a key member, where my performance helped the team secure victory in the [Name of Team Event], showcasing my ability to perform under pressure and contribute to team success.
+
+Coaching and Mentorship: Assisted in training and mentoring new shooters, sharing my knowledge and experience to help them improve their skills and understanding of the sport. Provided guidance on technique, safety, and competition preparation.
+
+Promotion of the Sport: Actively promoted air pistol shooting by participating in demonstrations and outreach events, helping to increase awareness and interest in the sport within the community.
+
+Overall Contribution: My involvement in air pistol shooting has not only led to personal achievements and skill development but has also contributed to the growth and promotion of the sport.
+\end{itemize}
+
+\end{document}% Write your lab notebook entry here.
